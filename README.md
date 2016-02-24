@@ -1,6 +1,8 @@
-# Code guidelines for Strateg
+# Strateg code guidelines
 
-## Html
+## File structure and naming
+
+## HTML
 
 ## SASS/CSS
 
