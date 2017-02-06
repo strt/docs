@@ -5,10 +5,49 @@
 kebab-case with year suffix if it's a client project, e.g. `strt-boilerplate` or `svebio-2016`
 
 ## CSS & SASS
+### Naming convention
+BEM – read more about it [here](http://getbem.com/introduction/)
+
+#### Only nest class names one level
+###### ✅ Do
+```SASS
+.nav {
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+```
+
+###### ❌ Don't 
+```SASS
+.nav {
+  &__list {
+    list-style: none;
+  }
+
+  &__list__item {
+    display: inline-block;
+  }
+
+  &__list__item__link {
+    text-decoration: none;
+  }
+}
+```
+
+### Style
 Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg)
 
 ## Javascript
-Use [eslint](https://github.com/eslint/eslint) and the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
 
 ## PHP
 
