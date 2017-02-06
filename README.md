@@ -5,8 +5,63 @@
 kebab-case with year suffix if it's a client project, e.g. `strt-boilerplate` or `svebio-2016`
 
 ## CSS & SASS
+
+### Style
+Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg)
+
 ### Naming convention
 BEM – read more about it [here](http://getbem.com/introduction/)
+
+#### camelCase class names
+###### ✅ Do
+```SASS
+.searchBar {}
+```
+
+###### ❌ Don't 
+```SASS
+.search-bar {}
+.search_bar {}
+// etc
+```
+
+#### Don't use id selectors
+###### ✅ Do
+```SASS
+.header {}
+```
+
+###### ❌ Don't 
+```SASS
+#header {}
+```
+
+#### Use modular BEM modifiers
+###### ✅ Do
+```SASS
+.hero {
+  &.-large {
+    min-height: 100vh;
+  }
+
+  &.-small {
+    min-height: 20vh;
+  }
+}
+```
+
+###### ❌ Don't 
+```SASS
+.hero {
+  &--large {
+    min-height: 100vh;
+  }
+
+  &--small {
+    min-height: 20vh;
+  }
+}
+```
 
 #### Only nest class names one level
 ###### ✅ Do
@@ -42,9 +97,6 @@ BEM – read more about it [here](http://getbem.com/introduction/)
   }
 }
 ```
-
-### Style
-Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg)
 
 ## Javascript
 Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
