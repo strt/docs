@@ -1,16 +1,18 @@
 # Strateg code guidelines
 
-## File structure and naming
+## Git 
+### Repository naming convention
+kebab-case with year suffix if it's a client project, e.g. `strt-boilerplate` or `svebio-2016`
 
-## HTML
+## CSS & SASS
+Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg)
 
-## SASS/CSS
-
-## JS
+## Javascript
+Use [eslint](https://github.com/eslint/eslint) and the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
 
 ## PHP
-### Code standard
 
+### Code standard
 * Endast <?php ?>
 * Kodning UTF-8
 * Filer ska endast definera klasser, funktioner konstanter eller generera innehåll. Men inte båda två.
