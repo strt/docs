@@ -98,6 +98,69 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 }
 ```
 
+#### Place modifiers at the bottom
+###### ✅ Do
+```SASS
+.hero {
+  display: flex;
+
+  &.-large {
+    min-height: 100vh;
+  }
+}
+```
+
+###### ❌ Don't 
+```SASS
+.hero {
+  &.-large {
+    min-height: 100vh;
+  }
+
+  display: flex;
+}
+```
+
+#### Place breakpoints at the bottom of the current selector
+###### ✅ Do
+```SASS
+.hero {
+  display: flex;
+
+  @include breakpoint(mobile) {
+    flex-flow: column wrap;
+  }
+
+  // Place modifiers below block or element breakpoints
+  &.-large {
+    min-height: 100vh;
+
+    @include breakpoint(mobile) {
+      min-height: 60vh;
+    }
+  }
+}
+```
+
+###### ❌ Don't 
+```SASS
+.hero {
+  display: flex;
+
+  &.-large {
+    min-height: 100vh;
+  }
+
+  @include breakpoint(mobile) {
+    flex-flow: column wrap;
+
+    &.-large {
+      min-height: 60vh;
+    }
+  }
+}
+```
+
 ## Javascript
 Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
 
