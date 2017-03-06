@@ -1,11 +1,19 @@
 # Strateg code guidelines
 
-## Git 
+## Contents
++ [Git](#git)
++ [JavaScript](#javascript)
++ [Sass](#sass)
++ [PHP](#php)
+
+## Git
 ### Repository naming convention
 kebab-case with year suffix if it's a client project, e.g. `strt-boilerplate` or `svebio-2016`
 
-## CSS & SASS
+## JavaScript
+Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
 
+## Sass
 ### Style
 Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg)
 
@@ -14,12 +22,12 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 
 #### camelCase class names
 ###### ✅ Do
-```SASS
+``` SASS
 .searchBar {}
 ```
 
 ###### ❌ Don't 
-```SASS
+``` SASS
 .search-bar {}
 .search_bar {}
 // etc
@@ -27,18 +35,18 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 
 #### Don't use id selectors
 ###### ✅ Do
-```SASS
+``` SASS
 .header {}
 ```
 
 ###### ❌ Don't 
-```SASS
+``` SASS
 #header {}
 ```
 
 #### Use modular BEM modifiers
 ###### ✅ Do
-```SASS
+``` SASS
 .hero {
   &.-large {
     min-height: 100vh;
@@ -51,7 +59,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 ###### ❌ Don't 
-```SASS
+``` SASS
 .hero {
   &--large {
     min-height: 100vh;
@@ -65,7 +73,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 
 #### Only nest class names one level
 ###### ✅ Do
-```SASS
+``` SASS
 .nav {
   &__list {
     list-style: none;
@@ -82,7 +90,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 ###### ❌ Don't 
-```SASS
+``` SASS
 .nav {
   &__list {
     list-style: none;
@@ -100,7 +108,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 
 #### Place modifiers at the bottom
 ###### ✅ Do
-```SASS
+``` SASS
 .hero {
   display: flex;
 
@@ -111,7 +119,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 ###### ❌ Don't 
-```SASS
+``` SASS
 .hero {
   &.-large {
     min-height: 100vh;
@@ -123,7 +131,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 
 #### Place breakpoints at the bottom of the current selector
 ###### ✅ Do
-```SASS
+``` SASS
 .hero {
   display: flex;
 
@@ -143,7 +151,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 ###### ❌ Don't 
-```SASS
+``` SASS
 .hero {
   display: flex;
 
@@ -161,11 +169,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 }
 ```
 
-## Javascript
-Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
-
 ## PHP
-
 ## Kodstandard
 * Endast <?php ?>
 * Kodning UTF-8
