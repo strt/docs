@@ -201,5 +201,19 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 * En switch statement MÅSTE INTE innehålla kommentarer för att visa att den fortsätter längre ner i koden.
 * En foreach behöver inte innehålla key variabel.
 * Vid osäkra operationer, använd alltid try/catch.
+* Vid definition av funktion eller method ska inte ett mellanrum mellan funktion-namn och argumentlistning finnas.
+
+## Autoloading
+* Hänvisas till www.php-fig.org
+
+## HTTP-Message
+* I störta utsträckning, använd http koder för return meddelanden.
+* Hänvisas till www.php-fig.org
+
+## Dokumentering
+* Skall följa den standard som används av PHPDoc.
+
+
+
 
 __Senast uppdaterad 6/2 -17__
