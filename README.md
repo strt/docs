@@ -178,6 +178,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 * Klasser ska vara skriva enligt StudlyCaps.
 * Konstanter ska vara skrivna i versaler och separerade med understreck.
 * Metoder måste vara skrivna enligt camelCase.
+* Variabler och properties måste var skrivna enligt camelCase.
 
 ## Kodstil
 * En tab är 4 mellanslag.
