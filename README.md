@@ -10,6 +10,14 @@
 ### Repository naming convention
 kebab-case with year suffix if it's a client project, e.g. `strt-boilerplate` or `svebio-2016`
 
+Pusha aldrig upp ofärdig funktionalitet.
+
+Du måste inte, men försök att commita vid varje ny individuell funktionalitet.
+
+Skriv action i grundform såsom: Add, fix, update
+
+Alla projekt ska innehålla en README.md som beskriver hur man sätter upp projektet, vad det är byggt på och om det använder något speciell funktionalitet.
+
 ## JavaScript
 Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
 
@@ -170,7 +178,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 ## PHP
-## Kodstandard
+### Kodstandard
 * Endast <?php ?>
 * Kodning UTF-8
 * Filer ska endast definera klasser, funktioner konstanter eller generera innehåll. Men inte båda två.
@@ -180,7 +188,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 * Metoder måste vara skrivna enligt camelCase.
 * Variabler och properties måste var skrivna enligt camelCase.
 
-## Kodstil
+### Kodstil
 * En tab är 4 mellanslag.
 * En mjuk linje är 80 tecken.
 * En hård linje är 120 tecken.
@@ -197,24 +205,34 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 * static måste komma efter synligheten.
 * vid anrop av metoder ska inte mellanslag finnas, förrutom vid argumentlistning.
 
-## Kontrollstruktur
+### Kontrollstruktur
 * elseif ska inte innehålla ett mellanslag
 * En switch statement MÅSTE INTE innehålla kommentarer för att visa att den fortsätter längre ner i koden.
 * En foreach behöver inte innehålla key variabel.
 * Vid osäkra operationer, använd alltid try/catch.
 * Vid definition av funktion eller method ska inte ett mellanrum mellan funktion-namn och argumentlistning finnas.
 
-## Autoloading
+### Autoloading
 * Hänvisas till www.php-fig.org
 
-## HTTP-Message
+### HTTP-Message
 * I störta utsträckning, använd http koder för return meddelanden.
 * Hänvisas till www.php-fig.org
 
-## Dokumentering
+### Dokumentering
 * Skall följa den standard som används av PHPDoc.
+* Ett block av dokumentering ska alltid innehålla Author, Param och Return om detta är applicerbart.
+* Ett block ska alltid finnas för metoder och funktioner.
+* Man måste inte använda inline kommentarer. Dessa skrivs med //.
 
+## Sitevision
+### Dokumentering
+* Ska följa standarden enligt [jsdoc](http://usejsdoc.org/)
+* En scriptmodul ska alltid i toppen ha ett block med author, description och versionsnummer av SV.
 
+### Kodstil
+* Använd endast det officiella publika API:et.
+* All kod ska wrappas i en self-invoking function.
 
 
 __Senast uppdaterad 6/2 -17__
