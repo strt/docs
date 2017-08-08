@@ -44,33 +44,6 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 #header {}
 ```
 
-#### Use modular BEM modifiers
-###### ✅ Do
-``` SASS
-.hero {
-  &.-large {
-    min-height: 100vh;
-  }
-
-  &.-small {
-    min-height: 20vh;
-  }
-}
-```
-
-###### ❌ Don't 
-``` SASS
-.hero {
-  &--large {
-    min-height: 100vh;
-  }
-
-  &--small {
-    min-height: 20vh;
-  }
-}
-```
-
 #### Only nest class names one level
 ###### ✅ Do
 ``` SASS
