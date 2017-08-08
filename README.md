@@ -7,16 +7,12 @@
 + [PHP](#php)
 
 ## Git
-### Repository naming convention
-kebab-case with year suffix if it's a client project, e.g. `strt-boilerplate` or `svebio-2016`
-
-Pusha aldrig upp ofärdig funktionalitet.
-
-Du måste inte, men försök att commita vid varje ny individuell funktionalitet.
-
-Skriv action i grundform såsom: Add, fix, update
-
-Alla projekt ska innehålla en README.md som beskriver hur man sätter upp projektet, vad det är byggt på och om det använder något speciell funktionalitet.
+### Guidelines
++ `kebab-case` repository name with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
++ Commit often and after each added/updated feature
++ Don't push unfinished code
++ Write present-tense, imperative-style commit messages. `Add`, `Fix`, `Refactor` etc
++ Every project should contain a readme that describes how to set-up the project  
 
 ## JavaScript
 Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
@@ -29,12 +25,12 @@ Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-confi
 BEM – read more about it [here](http://getbem.com/introduction/)
 
 #### camelCase class names
-###### ✅ Do
+###### ✅ Good
 ``` SASS
 .searchBar {}
 ```
 
-###### ❌ Don't 
+###### ❌ Bad 
 ``` SASS
 .search-bar {}
 .search_bar {}
@@ -42,18 +38,18 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 #### Don't use id selectors
-###### ✅ Do
+###### ✅ Good
 ``` SASS
 .header {}
 ```
 
-###### ❌ Don't 
+###### ❌ Bad 
 ``` SASS
 #header {}
 ```
 
 #### Only nest class names one level
-###### ✅ Do
+###### ✅ Good
 ``` SASS
 .nav {
   &__list {
@@ -70,7 +66,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 }
 ```
 
-###### ❌ Don't 
+###### ❌ Bad 
 ``` SASS
 .nav {
   &__list {
@@ -88,7 +84,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 #### Place modifiers at the bottom
-###### ✅ Do
+###### ✅ Good
 ``` SASS
 .hero {
   display: flex;
@@ -99,7 +95,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 }
 ```
 
-###### ❌ Don't 
+###### ❌ Bad 
 ``` SASS
 .hero {
   &.-large {
@@ -111,7 +107,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ```
 
 #### Place breakpoints at the bottom of the current selector
-###### ✅ Do
+###### ✅ Good
 ``` SASS
 .hero {
   display: flex;
@@ -131,7 +127,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 }
 ```
 
-###### ❌ Don't 
+###### ❌ Bad 
 ``` SASS
 .hero {
   display: flex;
