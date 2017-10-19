@@ -6,9 +6,7 @@
 
 - [Git](#git)
 - [JavaScript](#javascript)
-- [SASS and CSS](#sass-and-css)
-  - [Style](#style)
-  - [Naming convention](#naming-convention)
+- [(S)CSS](#scss)
 - [PHP](#php)
   - [Kodstandard](#kodstandard)
   - [Kodstil](#kodstil)
@@ -32,126 +30,14 @@
 ## JavaScript
 Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.com/airbnb/javascript) preset
 
-## SASS and CSS
-### Style
-Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg) preset
-
-### Naming convention
-BEM – read more about it [here](http://getbem.com/introduction/)
-
-#### camelCase class names
-###### ✅ Good
-``` SASS
-.searchBar {}
-```
-
-###### ❌ Bad 
-``` SASS
-.search-bar {}
-.search_bar {}
-// etc
-```
-
-#### Don't use id selectors
-###### ✅ Good
-``` SASS
-.header {}
-```
-
-###### ❌ Bad 
-``` SASS
-#header {}
-```
-
-#### Only nest class names one level
-###### ✅ Good
-``` SASS
-.nav {
-  &__list {
-    list-style: none;
-  }
-
-  &__item {
-    display: inline-block;
-  }
-}
-```
-
-###### ❌ Bad 
-``` SASS
-.nav {
-  &__list {
-    list-style: none;
-  }
-
-  &__list__item {
-    display: inline-block;
-  }
-}
-```
-
-#### Place modifiers at the bottom
-###### ✅ Good
-``` SASS
-.hero {
-  display: flex;
-
-  &.-large {
-    min-height: 100vh;
-  }
-}
-```
-
-###### ❌ Bad 
-``` SASS
-.hero {
-  &.-large {
-    min-height: 100vh;
-  }
-
-  display: flex;
-}
-```
-
-#### Place breakpoints at the bottom of the current selector
-###### ✅ Good
-``` SASS
-.hero {
-  display: flex;
-
-  @include breakpoint(mobile) {
-    flex-flow: column wrap;
-  }
-
-  // Place modifiers below block or element breakpoints
-  &.-large {
-    min-height: 100vh;
-
-    @include breakpoint(mobile) {
-      min-height: 60vh;
-    }
-  }
-}
-```
-
-###### ❌ Bad 
-``` SASS
-.hero {
-  display: flex;
-
-  &.-large {
-    min-height: 100vh;
-  }
-
-  @include breakpoint(mobile) {
-    flex-flow: column wrap;
-
-    &.-large {
-      min-height: 60vh;
-    }
-  }
-}
-```
+## (S)CSS
+- Use [BEM](http://getbem.com/introduction/)
+- Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg) preset
+- `camelCase` class names. Use `.searchBar` not `.search-bar`
+- Don't use id selectors
+- Only nest BEM elements one level. Use `.nav__item` not `.nav__list__item`
+- Place BEM modifiers at the bottom of the selector
+- Place media queries at the bottom of the current selector but before BEM modifiers
 
 ## PHP
 ### Kodstandard
