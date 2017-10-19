@@ -1,25 +1,41 @@
 # Strateg code guidelines
 
 ## Contents
-+ [Git](#git)
-+ [JavaScript](#javascript)
-+ [Sass](#sass)
-+ [PHP](#php)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- https://github.com/thlorenz/doctoc -->
+
+- [Git](#git)
+- [JavaScript](#javascript)
+- [SASS and CSS](#sass-and-css)
+  - [Style](#style)
+  - [Naming convention](#naming-convention)
+- [PHP](#php)
+  - [Kodstandard](#kodstandard)
+  - [Kodstil](#kodstil)
+  - [Kontrollstruktur](#kontrollstruktur)
+  - [Autoloading](#autoloading)
+  - [HTTP-Message](#http-message)
+  - [Dokumentering](#dokumentering)
+- [SiteVision](#sitevision)
+  - [Dokumentering](#dokumentering-1)
+  - [Kodstil](#kodstil-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Git
-### Guidelines
-+ `kebab-case` repository name with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
++ `kebab-case` repository names with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
 + Commit often and after each added/updated feature
-+ Don't push unfinished code
++ Don't push broken code
 + Write present-tense, imperative-style commit messages. `Add`, `Fix`, `Refactor` etc
 + Every project should contain a readme that describes how to set-up the project  
 
 ## JavaScript
-Use [eslint](https://github.com/eslint/eslint) and the [Airbnb javascript style guide](https://github.com/airbnb/javascript)
+Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.com/airbnb/javascript) preset
 
-## Sass
+## SASS and CSS
 ### Style
-Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg)
+Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg) preset
 
 ### Naming convention
 BEM – read more about it [here](http://getbem.com/introduction/)
@@ -59,10 +75,6 @@ BEM – read more about it [here](http://getbem.com/introduction/)
   &__item {
     display: inline-block;
   }
-
-  &__link {
-    text-decoration: none;
-  }
 }
 ```
 
@@ -75,10 +87,6 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 
   &__list__item {
     display: inline-block;
-  }
-
-  &__list__item__link {
-    text-decoration: none;
   }
 }
 ```
@@ -194,7 +202,7 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 * Ett block ska alltid finnas för metoder och funktioner.
 * Man måste inte använda inline kommentarer. Dessa skrivs med //.
 
-## Sitevision
+## SiteVision
 ### Dokumentering
 * Ska följa standarden enligt [jsdoc](http://usejsdoc.org/)
 * En scriptmodul ska alltid i toppen ha ett block med author, description och versionsnummer av SV.
@@ -202,6 +210,3 @@ BEM – read more about it [here](http://getbem.com/introduction/)
 ### Kodstil
 * Använd endast det officiella publika API:et.
 * All kod ska wrappas i en self-invoking function.
-
-
-__Senast uppdaterad 6/2 -17__

@@ -1,0 +1,10 @@
+{
+  "name": "@strt/code-of-conduct",
+  "version": "1.0.0",
+  "devDependencies": {
+    "doctoc": "^1.3.0"
+  },
+  "scripts": {
+    "toc": "doctoc readme.md --maxlevel 3"
+  }
+}
