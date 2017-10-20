@@ -15,17 +15,16 @@
   - [HTTP-Message](#http-message)
   - [Dokumentering](#dokumentering)
 - [SiteVision](#sitevision)
-  - [Dokumentering](#dokumentering-1)
-  - [Kodstil](#kodstil-1)
+  - [Documentation](#documentation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Git
-+ `kebab-case` repository names with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
-+ Commit often and after each added/updated feature
-+ Don't push broken code
-+ Write present-tense, imperative-style commit messages. `Add`, `Fix`, `Refactor` etc
-+ Every project should contain a readme that describes how to set-up the project  
+- `kebab-case` repository names with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
+- Commit often and after each added/updated feature
+- Don't push broken code
+- Write present-tense, imperative-style commit messages. `Add`, `Fix`, `Refactor` etc
+- Every project should contain a readme that describes how to set-up the project  
 
 ## JavaScript
 Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.com/airbnb/javascript) preset
@@ -86,10 +85,10 @@ Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.
 * Inline comments are not needed for all lines.
 
 ## SiteVision
-### Dokumentering
-* Ska följa standarden enligt [jsdoc](http://usejsdoc.org/)
-* En scriptmodul ska alltid i toppen ha ett block med author, description och versionsnummer av SV.
+- Only use the official [public API](https://help4.sitevision.se/webdav/files/apidocs/index.html) to avoid problems with future versions of SiteVision
+- Code should be wrapped in a self-invoking function to avoid leaking varaibles to the Velocity parser
+- Use the eslint config provided in [sitevision-modules](https://github.com/strt/sitevision-modules) 
 
-### Kodstil
-* Använd endast det officiella publika API:et.
-* All kod ska wrappas i en self-invoking function.
+### Documentation
+- Documentation should follow the [JSDoc](http://usejsdoc.org/) specification
+- Begin every script module with a block comment containing description, SiteVision version number and author
