@@ -4,43 +4,43 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-- [Git](#git)
-- [JavaScript](#javascript)
-- [(S)CSS](#scss)
-- [PHP](#php)
-  - [Kodstandard](#kodstandard)
-  - [Kodstil](#kodstil)
-  - [Kontrollstruktur](#kontrollstruktur)
-  - [Autoloading](#autoloading)
-  - [HTTP-Message](#http-message)
-  - [Dokumentering](#dokumentering)
-- [SiteVision](#sitevision)
-  - [Documentation](#documentation)
+* [Git](#git)
+* [JavaScript](#javascript)
+* [(S)CSS](#scss)
+* [PHP](#php)
+  * [Kodstandard](#kodstandard)
+  * [Kodstil](#kodstil)
+  * [Kontrollstruktur](#kontrollstruktur)
+  * [Autoloading](#autoloading)
+  * [HTTP-Message](#http-message)
+  * [Dokumentering](#dokumentering)
+* [SiteVision](#sitevision)
+  * [Documentation](#documentation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Git
-- `kebab-case` repository names with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
-- Commit often and after each added/updated feature
-- Don't push broken code
-- Write present-tense, imperative-style commit messages. `Add`, `Fix`, `Refactor` etc
-- Every project should contain a readme that describes how to set-up the project  
+* `kebab-case` repository names with year suffix if it's a client project, e.g. `boilerplate` or `svebio-2016`
+* Commit often and after each added/updated feature
+* Don't push broken code
+* Write present-tense, imperative-style commit messages. `Add`, `Fix`, `Refactor` etc
+* Every project should contain a readme that describes how to set-up the project  
 
 ## JavaScript
 Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.com/airbnb/javascript) preset
 
 ## (S)CSS
-- Use [BEM](http://getbem.com/introduction/)
-- Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg) preset
-- `camelCase` class names. Use `.searchBar` not `.search-bar`
-- Don't use id selectors
-- Only nest BEM elements one level. Use `.nav__item` not `.nav__list__item`
-- Place BEM modifiers at the bottom of the selector
-- Place media queries at the bottom of the current selector but before BEM modifiers
+* Use [BEM](http://getbem.com/introduction/)
+* Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg) preset
+* `camelCase` class names. Use `.searchBar` not `.search-bar`
+* Don't use id selectors
+* Only nest BEM elements one level. Use `.nav__item` not `.nav__list__item`
+* Place BEM modifiers at the bottom of the selector
+* Place media queries at the bottom of the current selector but before BEM modifiers
 
 ## PHP
-### Kodstandard
-* Use the full '<?php ?>' tag instead of smaller '<? ?>'
+### Code standard
+* Use the full php tag instead of the shorthand php tag.
 * Always use UTF-8 encoding
 * Files should only define classes, functions, or produce content. But not both.
 * Namespacing shall follow the PSR-standard.
@@ -49,7 +49,7 @@ Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.
 * Methods must be written in camelCase.
 * Variables and properties must be written in camelCase.
 
-### Kodstil
+### Code style
 * A tab is four spaces.
 * A soft line is 80 characters.
 * A hard line is 120 characters.
@@ -65,7 +65,7 @@ Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.
 * Static keyword must come after visibility.
 * There should be no spacing before the first and after the last argument in a method or function.
 
-### Kontrollstruktur
+### Statement structure
 * Elseif should not contain spaces.
 * A switch statement must not contain comments that refers to pieces of code further down.
 * A foreach does not need to include both key and value variables.
@@ -74,21 +74,21 @@ Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.
 ### Autoloading
 * See www.php-fig.org
 
-### HTTP-Message
-* When applicable use HTTP codes as much as you can.
-* see www.php-fig.org
+### HTTP-Messages
+* When applicable use HTTP status as much as you can.
+* See www.php-fig.org
 
-### Dokumentering
+### Documentation
 * Should follow the standard set by PHPDoc.
 * A block of documentation should always have a author, param and return tag if applicable.
 * A block for methods and functions should always exist.
 * Inline comments are not needed for all lines.
 
 ## SiteVision
-- Only use the official [public API](https://help4.sitevision.se/webdav/files/apidocs/index.html) to avoid problems with future versions of SiteVision
-- Code should be wrapped in a self-invoking function to avoid leaking varaibles to the Velocity parser
-- Use the eslint config provided in [sitevision-modules](https://github.com/strt/sitevision-modules) 
+* Only use the official [public API](https://help4.sitevision.se/webdav/files/apidocs/index.html) to avoid problems with future versions of SiteVision
+* Code should be wrapped in a self-invoking function to avoid leaking varaibles to the Velocity parser
+* Use the eslint config provided in [sitevision-modules](https://github.com/strt/sitevision-modules) 
 
 ### Documentation
-- Documentation should follow the [JSDoc](http://usejsdoc.org/) specification
-- Begin every script module with a block comment containing description, SiteVision version number and author
+* Documentation should follow the [JSDoc](http://usejsdoc.org/) specification
+* Begin every script module with a block comment containing description, SiteVision version number and author
