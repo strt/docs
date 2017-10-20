@@ -41,51 +41,49 @@ Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.
 
 ## PHP
 ### Kodstandard
-* Endast <?php ?>
-* Kodning UTF-8
-* Filer ska endast definera klasser, funktioner konstanter eller generera innehåll. Men inte båda två.
-* Namespace ska följa en PSR-standard.
-* Klasser ska vara skriva enligt StudlyCaps.
-* Konstanter ska vara skrivna i versaler och separerade med understreck.
-* Metoder måste vara skrivna enligt camelCase.
-* Variabler och properties måste var skrivna enligt camelCase.
+* Use the full '<?php ?>' tag instead of smaller '<? ?>'
+* Always use UTF-8 encoding
+* Files should only define classes, functions, or produce content. But not both.
+* Namespacing shall follow the PSR-standard.
+* Classes should be written in a PascalCase manner.
+* Constants should be capitalized and seperated with an underscore.
+* Methods must be written in camelCase.
+* Variables and properties must be written in camelCase.
 
 ### Kodstil
-* En tab är 4 mellanslag.
-* En mjuk linje är 80 tecken.
-* En hård linje är 120 tecken.
-* Det måste vara en tom rad efter namespace och use.
-* Man måste öppna curly brackets på en ny rad efter funktionens eller metodens rad.
-* Synlighet måste vara angett för alla properties och metoder.
-* true, false och null ska vara med små bokstäver
-* extend och implement ska vara på samma rad som klassnamnet
-* Properties och Methods ska inte prefix:as med en eller flera underscores
-* Methods ska inte ha ett mellanrum mellan namn och parenteser
-* Metodargument med defaultvärde ska komma sist i listan.
-* Om metodnamn + argument är längre än en mjuk eller hård linje, dela upp argument på ny rad per argument med en indentering, som en metod body. slutparentesen ska ligga på samma rad som öppnings måsvingen för bodyn.
-* abstract, final måste vara före synligheten.
-* static måste komma efter synligheten.
-* vid anrop av metoder ska inte mellanslag finnas, förrutom vid argumentlistning.
+* A tab is four spaces.
+* A soft line is 80 characters.
+* A hard line is 120 characters.
+* A newline after end of namespace and use statements.
+* Curly bracets are opened on a new line when writing functions or methods.
+* Visibility must be given on all properties and methods.
+* True, false and null must be lowercase.
+* Extend and implement must be on the same line as the class name.
+* Properties and methods should not be prefixed with one or several underscores.
+* Methods should not include a spacing between method name and parenthesis.
+* If the method name and its arguments exeeds the soft or hard line, make a new line for each argument.
+* Abstract and final keywords must be set before visibility.
+* Static keyword must come after visibility.
+* There should be no spacing before the first and after the last argument in a method or function.
 
 ### Kontrollstruktur
-* elseif ska inte innehålla ett mellanslag
-* En switch statement MÅSTE INTE innehålla kommentarer för att visa att den fortsätter längre ner i koden.
-* En foreach behöver inte innehålla key variabel.
-* Vid osäkra operationer, använd alltid try/catch.
-* Vid definition av funktion eller method ska inte ett mellanrum mellan funktion-namn och argumentlistning finnas.
+* Elseif should not contain spaces.
+* A switch statement must not contain comments that refers to pieces of code further down.
+* A foreach does not need to include both key and value variables.
+* In unstable operations, always use a try/catch.
 
 ### Autoloading
-* Hänvisas till www.php-fig.org
+* See www.php-fig.org
 
 ### HTTP-Message
-* I störta utsträckning, använd http koder för return meddelanden.
-* Hänvisas till www.php-fig.org
+* When applicable use HTTP codes as much as you can.
+* see www.php-fig.org
 
 ### Dokumentering
-* Skall följa den standard som används av PHPDoc.
-* Ett block av dokumentering ska alltid innehålla Author, Param och Return om detta är applicerbart.
-* Ett block ska alltid finnas för metoder och funktioner.
-* Man måste inte använda inline kommentarer. Dessa skrivs med //.
+* Should follow the standard set by PHPDoc.
+* A block of documentation should always have a author, param and return tag if applicable.
+* A block for methods and functions should always exist.
+* Inline comments are not needed for all lines.
 
 ## SiteVision
 ### Dokumentering
