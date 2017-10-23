@@ -4,18 +4,18 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-* [Git](#git)
-* [JavaScript](#javascript)
-* [(S)CSS](#scss)
-* [PHP](#php)
-  * [Kodstandard](#kodstandard)
-  * [Kodstil](#kodstil)
-  * [Kontrollstruktur](#kontrollstruktur)
-  * [Autoloading](#autoloading)
-  * [HTTP-Message](#http-message)
-  * [Dokumentering](#dokumentering)
-* [SiteVision](#sitevision)
-  * [Documentation](#documentation)
+- [Git](#git)
+- [JavaScript](#javascript)
+- [(S)CSS](#scss)
+- [PHP](#php)
+  - [Code standard](#code-standard)
+  - [Code style](#code-style)
+  - [Statement structure](#statement-structure)
+  - [Autoloading](#autoloading)
+  - [HTTP-Messages](#http-messages)
+  - [Documentation](#documentation)
+- [SiteVision](#sitevision)
+  - [Documentation](#documentation-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
