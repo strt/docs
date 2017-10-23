@@ -87,7 +87,7 @@ Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.
 ## SiteVision
 * Only use the official [public API](https://help4.sitevision.se/webdav/files/apidocs/index.html) to avoid problems with future versions of SiteVision
 * Code should be wrapped in a self-invoking function to avoid leaking varaibles to the Velocity parser
-* Use the eslint config provided in [sitevision-modules](https://github.com/strt/sitevision-modules) 
+* Lint your code with eslint and use the [eslint-config-strt-sitevision](https://github.com/strt/eslint-config-strt-sitevision) config
 
 ### Documentation
 * Documentation should follow the [JSDoc](http://usejsdoc.org/) specification
