@@ -30,13 +30,7 @@
 Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.com/airbnb/javascript) preset
 
 ## (S)CSS
-- Use [BEM](http://getbem.com/introduction/)
-- Use [stylelint](https://github.com/stylelint/stylelint) and the [stylelint-config-strateg](https://github.com/strt/stylelint-config-strateg) preset
-- `camelCase` class names. Use `.searchBar` not `.search-bar`
-- Don't use id selectors
-- Only nest BEM elements one level. Use `.nav__item` not `.nav__list__item`
-- Place BEM modifiers at the bottom of the selector
-- Place media queries at the bottom of the current selector but before BEM modifiers
+See [our styleguide](https://github.com/strt/css)
 
 ## PHP
 ### Code standard
