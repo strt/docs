@@ -27,7 +27,7 @@
 - Every project should contain a readme that describes how to set-up the project  
 
 ## JavaScript
-Use [eslint](https://github.com/eslint/eslint) with the [Airbnb](https://github.com/airbnb/javascript) preset
+See [our styleguide](https://github.com/strt/javascript)
 
 ## (S)CSS
 See [our styleguide](https://github.com/strt/css)
