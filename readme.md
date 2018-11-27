@@ -5,17 +5,17 @@
 ## Contents
 
 - [Git](#git)
-    - [Branching](#branching)
-      - [Branch naming](#branch-naming)
-    - [Rebasing](#rebasing)
-    - [Committing](#committing)
-      - [Separation of concerns](#separation-of-concerns)
-      - [Messages](#messages)
-        - ["Tagging" commits.](#tagging-commits)
-    - [Pull Requests](#pull-requests)
-      - [Preparation](#preparation)
-      - [Review](#review)
-    - [Merging](#merging)
+  - [Branching](#branching)
+    - [Branch naming](#branch-naming)
+  - [Rebasing](#rebasing)
+  - [Committing](#committing)
+    - [Separation of concerns](#separation-of-concerns)
+    - [Messages](#messages)
+    - ["Tagging" commits.](#tagging-commits)
+  - [Pull Requests](#pull-requests)
+    - [Preparation](#preparation)
+    - [Review](#review)
+  - [Merging](#merging)
 - [JavaScript](#javascript)
 - [(S)CSS](#scss)
 - [PHP](#php)
@@ -35,7 +35,7 @@
 
 Every project should contain a **README** which details on how to setup the project to a buildable/runnable state.
 
-#### Branching
+### Branching
 Branching in Git is easy and cheap and you should therefore be encouraged to branch as often as you feel like, when working on a new feature, fixing a bug or just tinkering around.
 
 While you are encouraged to branch whenever you feel like it, you MUST branch if you are working on a new feature or fixing an issue. The workflow for this should be as follow:
@@ -44,7 +44,7 @@ While you are encouraged to branch whenever you feel like it, you MUST branch if
 - Submit a pull request to have the changes reviewed by peers
 - If approved, squash and merge the branch into master.
 
-##### Branch naming
+#### Branch naming
 To keep some sort of consistency when working with branches, you should name your branch in the form of `initials/short_description`. Examples:
 
 `git checkout -b ak/ft-add-stuff`
@@ -53,7 +53,7 @@ To keep some sort of consistency when working with branches, you should name you
 
 This convention easily allows us to see who owns the branch and what changes reside within.
 
-#### Rebasing
+### Rebasing
 Since most repositories wont live in a vacuum there will usually be changes from other developers merged into the `master` branch. You should therefore get into the habbit of pulling from `origin/master` into your local `master` and rebasing your feature branch off of that to keep up-to-date:
 
 `git checkout master`
@@ -63,17 +63,17 @@ Since most repositories wont live in a vacuum there will usually be changes from
 
 There's a chance this will cause conflicts in which case `rebase` will pause at the current step and allow you to resolve these issues before continuing by running `git rebase --continue`
 
-#### Committing
+### Committing
 Just as branches, commits as easy and cheap to make. Therefore you should get into the habit of making frequent commits along the way instead of one huge commit at the end. This will be easier to review and, _if needed_, rollback, instead of trying to split the huge commit into smaller ones.
 
-##### Separation of concerns
+#### Separation of concerns
 Each commit should be self-contained, related and fully-functional.
 
 By self-contained and related we mean that a single commit should contain **all** changes related to the commit in question and **only** those changes. A commit should therefore not contain code for adding a new button while also containing code for fixing a bug in a seperate file. These changes should be in two seperate commits.
 
 By fully-functional we mean that every commit should be buildable/runnable, for example if anyone where to checkout any specific commit it should still be fully functional and runnable.
 
-##### Messages
+#### Messages
 Commit messages should contain a short and descriptive first line followed by a completely blank line then any supporting descriptive paragraphs as desired.
 
 Most of the time the single first line is all that is needed, but if you feel like you need more space for documentation or to describe the changes in detail you should feel free to use as much additional space as needed in the commit "body".
@@ -87,7 +87,7 @@ More descriptive multi-line commit:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum sit amet metus in malesuada. Integer porttitor consequat nulla, eu lobortis lectus mattis eu. Fusce dignissim risus in porta tempor.
 ```
 
-###### "Tagging" commits.
+#### "Tagging" commits.
 All commits should be "tagged" with any of the following "tags" to allow easier scanning of the commit log. A tag is always contained within square brackets.
 `[fix]` Commit that fixes a bug/issue.
 `[add]` Adding new functionality.
@@ -96,20 +96,20 @@ All commits should be "tagged" with any of the following "tags" to allow easier 
 `[refactor]` Changes that optimize, clean-up or restructures existing functionality without actually changing the flow/logic.
 `[docs]` Adding documentation.
 
-#### Pull Requests
+### Pull Requests
 When you feel like a feature is complete and ready to be reviewed and/or tested by other developers you can signal this by creating a pull request.
 
-##### Preparation
+#### Preparation
 Before opening a pull request you should rebase your feature branch onto `master`. This will make merging the branch into master easier after the request has been approved.
 
-##### Review
+#### Review
 All developers on the project should actively participate in reviewing open pull requests. This keeps the whole team "in the loop" and helps them see what pieces are moving. This is also beneficial since more eyes on the code will potentially catch more bugs but also help enforce architectual consistency.
 
 If you are working solo on a project and therefore don't have any other developers to tag for the review, you should instead tag someone who has the needed skillset to effectively review your changes.
 
 You are encouraged to leave comments to ask questions regarding any code changes in the pull request.
 
-#### Merging
+### Merging
 When the review is complete and everyone has approved the pull request, the Pull Request should be merged into `master` and the feature branch will be closed.
 
 All merges should either be squashed and merged, or cherry-picked.
