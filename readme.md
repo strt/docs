@@ -47,8 +47,8 @@ While you are encouraged to branch whenever you feel like it, you MUST branch if
 #### Branch naming
 To keep some sort of consistency when working with branches, you should name your branch in the form of `initials/short_description`. Examples:
 
-`git checkout -b ak/ft-add-stuff`
-`git checkout -b ak/ft-add-other-stuff`
+`git checkout -b ak/ft-add-stuff`\
+`git checkout -b ak/ft-add-other-stuff`\
 `git checkout -b ak/iss-fix-stuff`
 
 This convention easily allows us to see who owns the branch and what changes reside within.
@@ -56,9 +56,9 @@ This convention easily allows us to see who owns the branch and what changes res
 ### Rebasing
 Since most repositories wont live in a vacuum there will usually be changes from other developers merged into the `master` branch. You should therefore get into the habbit of pulling from `origin/master` into your local `master` and rebasing your feature branch off of that to keep up-to-date:
 
-`git checkout master`
-`git pull`
-`git checkout ft-something`
+`git checkout master`\
+`git pull`\
+`git checkout ft-something`\
 `git rebase master`
 
 There's a chance this will cause conflicts in which case `rebase` will pause at the current step and allow you to resolve these issues before continuing by running `git rebase --continue`
@@ -79,22 +79,27 @@ Commit messages should contain a short and descriptive first line followed by a 
 Most of the time the single first line is all that is needed, but if you feel like you need more space for documentation or to describe the changes in detail you should feel free to use as much additional space as needed in the commit "body".
 
 Single-line commit:
+
 `[docs] Added documentation regarding thing.`
+
 More descriptive multi-line commit:
+
 ```
 [Fix] Lorem ipsum bug
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum sit amet metus in malesuada. Integer porttitor consequat nulla, eu lobortis lectus mattis eu. Fusce dignissim risus in porta tempor.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum sit amet metus in malesuada.\
+Integer porttitor consequat nulla, eu lobortis lectus mattis eu. Fusce dignissim risus in porta tempor.
 ```
 
 #### "Tagging" commits.
 All commits should be "tagged" with any of the following "tags" to allow easier scanning of the commit log. A tag is always contained within square brackets.
-`[fix]` Commit that fixes a bug/issue.
-`[add]` Adding new functionality.
-`[remove]` Removing old, unneeded functionality.
-`[change]` Changes that change the flow/logic of existing functionality.
-`[refactor]` Changes that optimize, clean-up or restructures existing functionality without actually changing the flow/logic.
-`[docs]` Adding documentation.
+
+- `[fix]` Commit that fixes a bug/issue.
+- `[add]` Adding new functionality.
+- `[remove]` Removing old, unneeded functionality.
+- `[change]` Changes that change the flow/logic of existing functionality.
+- `[refactor]` Changes that optimize, clean-up or restructures existing functionality without actually changing the flow/logic.
+- `[docs]` Adding documentation.
 
 ### Pull Requests
 When you feel like a feature is complete and ready to be reviewed and/or tested by other developers you can signal this by creating a pull request.
