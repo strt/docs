@@ -45,7 +45,7 @@ While you are encouraged to branch whenever you feel like it, you MUST branch if
 - If approved, squash and merge the branch into master.
 
 #### Branch naming
-To keep some sort of consistency when working with branches, you should name your branch in the form of `initials/short_description`. Examples:
+To keep some sort of consistency when working with branches, you should name your branch in the form of `initials/short-description`. Examples:
 
 `git checkout -b ak/ft-add-stuff`\
 `git checkout -b ak/ft-add-other-stuff`\
@@ -80,12 +80,12 @@ Most of the time the single first line is all that is needed, but if you feel li
 
 Single-line commit:
 
-`[docs] Added documentation regarding thing.`
+`docs: Added documentation regarding thing.`
 
 More descriptive multi-line commit:
 
 ```
-[Fix] Lorem ipsum bug
+fix: Lorem ipsum bug
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum sit amet metus in malesuada.\
 Integer porttitor consequat nulla, eu lobortis lectus mattis eu. Fusce dignissim risus in porta tempor.
@@ -94,12 +94,14 @@ Integer porttitor consequat nulla, eu lobortis lectus mattis eu. Fusce dignissim
 #### "Tagging" commits.
 All commits should be "tagged" with any of the following "tags" to allow easier scanning of the commit log. A tag is always contained within square brackets.
 
-- `[fix]` Commit that fixes a bug/issue.
-- `[add]` Adding new functionality.
-- `[remove]` Removing old, unneeded functionality.
-- `[change]` Changes that change the flow/logic of existing functionality.
-- `[refactor]` Changes that optimize, clean-up or restructures existing functionality without actually changing the flow/logic.
-- `[docs]` Adding documentation.
+- `chore:` Updating build scripts etc; no production code change.
+- `docs:` Changes to the documentation.
+- `feat:` New feature for the user, not a new feature for build script.
+- `fix:` Bug fix for the user, not a fix to a build script.
+- `refactor:` Refactoring production code, eg. renaming a variable.
+- `style:` Formatting, missing semi colons, etc; no production code change.
+- `test:` Adding missing tests, refactoring tests; no production code change.
+- `vendor:` Updating external dependencies.
 
 ### Pull Requests
 When you feel like a feature is complete and ready to be reviewed and/or tested by other developers you can signal this by creating a pull request.
