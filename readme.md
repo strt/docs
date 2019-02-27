@@ -176,7 +176,7 @@ See [our styleguide](https://github.com/strt/css)
 ## SiteVision
 - Only use the official [public API](https://help4.sitevision.se/webdav/files/apidocs/index.html) to avoid problems with future versions of SiteVision
 - Code should be wrapped in a self-invoking function to avoid leaking varaibles to the Velocity parser
-- Lint your code with eslint and use the [eslint-config-strt-sitevision](https://github.com/strt/eslint-config-strt-sitevision) config
+- Lint your code with eslint and use the [eslint-config-strt](https://github.com/strt/javascript/tree/master/packages/eslint-config-strateg) config
 
 ### Documentation
 - Documentation should follow the [JSDoc](http://usejsdoc.org/) specification
